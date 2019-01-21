@@ -2,25 +2,33 @@
 ##### Xinyi Ji, Allegra Chen, Jingfei Tan
 ---
 ### Website of Lingle
-
+- COMING SOON (When I can figure a host that can support Django and integrate with Google Cloud API)
 
 ### Inspiration
- - Being a student we have to read a lot of research paper to learn something new. Being a citizen we read news of different countries, different organizations with the developent of globalization. But with so many articles to read we only have limit time. Therefore, trying to find what is really useful in a short time is really useful for people nowadays.
-### Introduction to this project
-  - Trying to read news or a research paper but the article is too long to read? Paste the article on the website posted above and Lingle will help you highlight the significant sentences in the article, and then it will be much easier for you to read!
-#### Basic Functions
- - After pasting the whole article on the dialog box and click on the analyse button, Lingle will show you the same article with significant sentences highligted with different colours (red is for positive attitude, blue is for negative and the yellow is somewhat between these two). Then you can now read the text much easier by just looking at the sentences highlighted and knowing what kind of attitude these sentences represented.
+ - Language is the most powerful tool because it's what we use to communicate with each other. As specification and precision with language increases, people become close to understanding each other.
+ - We built Lingle because we were interested in machine learning APIs, and because all of the team members have had to learn English as a second language, so it was interesting to learn about English linguistics and linguistic computing, such as syntax, salience, etc.
+ - As students we have to read a lot of research papers. Being a citizen in the digital age means there is a plethora of online news. We hoped to make a web application that could identify focal entities in text (e.g. Person, Organization, etc.) and the negative, positive, mixed, and neutral connotations surrounding that entity in each sentence to isolate key sentences.
 
-### Great Features
- - With different colours to highlight the sentences, users can get the general attitude of the whole article by just skim the colours of the article.
+### Introduction to this project
+  - The purpose of Lingle is to try to read text, whether it be news or a research paper, and extract the significant sentences in the article based on the key entities/major subject matter of the text, and analyze the sentiment around them (positive, negative, neutral, etc.) to provide a visual representation of sentiment around key entities.
+
+### Functions and Features
+ - After pasting the text in the dialog box and click on the "analyze" button, Lingle will show you the significant sentences placed in different categories ( positive attitude, negative attitude and neutral attitude). 
+ - Then you can now read the text much easier by just looking at the sentences extracted and knowing what kind of attitude these sentences represented.
+- With the sentences being in different categories, users can get the general attitude of the whole article by just skim those sentences.
+- Provides a quick, visual sweep of long text inputs to identify key sentences concerning focal entities mentioned by the text.
+
 ### How we built it
- - The project is built in python and we also use the Natural Language Machine Learning APIs from Google to analyze the context of the article ( Thanks Google).
+ - Built on the Django framework with Python and HTML/CSS, we utilized the Natural Language Machine Learning APIs from Google to analyze the context of the text entered in the form ( Thanks Google)
 
 ### Challenges we ran into
- - We spent some time trying to show the context on the website with python connecting with html, css, Django framework which will highlight the sentences.
+ - We spent some time trying to show the context on the website with python connecting with html, css, Django framework which will show the sentences.
+ - This was our first time using Django and Machine Learning APIs. We were (pleasantly) surprised at how much data Google's Natural Language Processor, but it took a lot of effort to comb throw the seemingly endless dictionaries and lists. 
 
 ### What we learned
- - We learnt how to use the API and how to create a website.
+ - We learned how to utilize Google's Machine Learning API, to access and analyze the data and perform operations on it to benefit a user
+ - We also learned about Python serving as backend to HTML/CSS on Django, a completely new environment. 
 
 ### What's next
- - Continue to work on it to improve the interface and add more features.
+ - We didn't have enough time, but we have a constant in our code called NUM_ENTITIES, that sets the number of entities which the program looks for in the text with the highest salience (prevalence to text). We were hoping to let the user enter a number (e.g. 5) to denote the top n entities sentiment analysis would perform on.
+ - We would also like to provide some interactive ways to visualize the information by offering identification of key entities, so the user can select exactly which ones are used in the algorithm
