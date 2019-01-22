@@ -32,3 +32,4 @@
 ### What's next
  - We didn't have enough time, but we have a constant in our code called NUM_ENTITIES, that sets the number of entities which the program looks for in the text with the highest salience (prevalence to text). We were hoping to let the user enter a number (e.g. 5) to denote the top n entities sentiment analysis would perform on.
  - We would also like to provide some interactive ways to visualize the information by offering identification of key entities, so the user can select exactly which ones are used in the algorithm
+ - Currently the only language supported is English but we hope to extend it to support more languages!
